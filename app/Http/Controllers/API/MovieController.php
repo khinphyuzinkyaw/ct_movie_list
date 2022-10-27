@@ -159,7 +159,7 @@ class MovieController extends Controller
             $movie = Movie::find($id);
 
             if(!isset($movie)){
-                return $this->errorResponse('Movie Not Found!', 500);
+                return $this->errorResponse('Movie Not Found!', 400);
             }
             
             $ratings = $movie->ratings()->sum('rating');
@@ -254,6 +254,11 @@ class MovieController extends Controller
             }
 
             $movie = Movie::find($id);
+
+            if(!isset($movie)){
+                return $this->errorResponse('Movie Not Found!', 400);
+            }
+
             $movie->title = $request->title;
             $movie->summary = $request->summary;
             $movie->cover_image = !empty($coverImageName) ? $coverImageName : $movie->cover_image;
@@ -294,6 +299,10 @@ class MovieController extends Controller
             $authUser = Auth::user();
 
             $movie = Movie::find($id);
+
+            if(!isset($movie)){
+                return $this->errorResponse('Movie Not Found!', 400);
+            }
 
             if($authUser->id == $movie->user_id) {
 
