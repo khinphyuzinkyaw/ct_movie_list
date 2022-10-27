@@ -35,7 +35,8 @@ class MovieController extends Controller
         try {
 
             $authUser = Auth::user();
-            $data = DB::table('movies')
+            $data = [];
+            $movies = DB::table('movies')
                         ->leftjoin('authors', 'movies.author_id', '=', 'authors.id')
                         ->leftjoin('genres', 'movies.genre_id', '=', 'genres.id')
                         ->select(
@@ -48,8 +49,18 @@ class MovieController extends Controller
                         )
                         ->orderBy('movies.created_at', 'DESC')
                         ->paginate(5);
+            foreach($movies as $movie){
+                $data[] = [
+                    'id' => $movie->id,
+                    'title' => $movie->title,
+                    'summary' => $movie->summary,
+                    'cover_image' => ($movie->cover_image != null) ? asset('images/' . $movie->cover_image) : asset('images/default.jpg'),
+                    'author' => $movie->author_name,
+                    'genre' => $movie->genre_name,
+                ];
+            }
     
-            return $this->paginateSuccessResponse($data, Response::HTTP_OK);
+            return $this->paginateSuccessResponseWithArrayData($movies, $data, Response::HTTP_OK);
 
         } catch(\Exception $e) {
 
@@ -143,9 +154,14 @@ class MovieController extends Controller
             $movie_ids_by_ratings = [];
             $movie_ids_by_tags = [];
             $movie_ids = [];
+            $same_ratings = [];
 
             $movie = Movie::find($id);
 
+            if(!isset($movie)){
+                return $this->errorResponse('Movie Not Found!', 500);
+            }
+            
             $ratings = $movie->ratings()->sum('rating');
             $comments = $movie->comments()->select('id','comment')->get()->toArray();
             $tags = $movie->tags()->pluck('name')->toArray();
@@ -193,7 +209,7 @@ class MovieController extends Controller
 
             return $this->successResponse($data, Response::HTTP_OK);
 
-            } catch(\Exception $e) {
+        } catch(\Exception $e) {
 
             Log::error("API Movie Show Exception: $e");
             return $this->errorResponse('Something went wrong!', 500);
