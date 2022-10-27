@@ -34,7 +34,7 @@ class MovieController extends Controller
 
         try {
 
-            $user = auth('api')->user();
+            $authUser = Auth::user();
             $data = DB::table('movies')
                         ->leftjoin('authors', 'movies.author_id', '=', 'authors.id')
                         ->leftjoin('genres', 'movies.genre_id', '=', 'genres.id')

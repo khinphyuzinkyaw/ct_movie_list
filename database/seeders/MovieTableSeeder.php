@@ -18,7 +18,7 @@ class MovieTableSeeder extends Seeder
         $movies = [
             [
                 'title' => 'Movie 1',
-                'summary' => 'Movie 1',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
@@ -28,7 +28,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 2',
-                'summary' => 'Movie 2',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 2,
                 'genre_id' => 2,
@@ -38,7 +38,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 3',
-                'summary' => 'Movie 3',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 3,
                 'genre_id' => 3,
@@ -48,7 +48,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 4',
-                'summary' => 'Movie 4',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 2,
                 'genre_id' => 4,
@@ -58,7 +58,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 5',
-                'summary' => 'Movie 5',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 3,
                 'genre_id' => 5,
@@ -68,7 +68,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 6',
-                'summary' => 'Movie 6',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 2,
                 'genre_id' => 6,
@@ -78,7 +78,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 7',
-                'summary' => 'Movie 7',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 3,
                 'genre_id' => 7,
@@ -88,7 +88,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 8',
-                'summary' => 'Movie 8',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
@@ -98,7 +98,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 9',
-                'summary' => 'Movie 9',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
@@ -108,7 +108,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 10',
-                'summary' => 'Movie 10',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
@@ -118,7 +118,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 11',
-                'summary' => 'Movie 11',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
@@ -128,7 +128,7 @@ class MovieTableSeeder extends Seeder
             ],
             [
                 'title' => 'Movie 12',
-                'summary' => 'Movie 12',
+                'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 'cover_image' => null,
                 'user_id' => 1,
                 'genre_id' => 1,
