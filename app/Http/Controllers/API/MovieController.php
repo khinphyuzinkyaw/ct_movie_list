@@ -96,6 +96,8 @@ class MovieController extends Controller
             return $this->errorResponse($validator->messages(), 400);
         }
 
+        DB::beginTransaction();
+
         try {
 
             $authUser = Auth::user();
@@ -244,6 +246,8 @@ class MovieController extends Controller
             return $this->errorResponse($validator->messages(), 400);
         }
 
+        DB::beginTransaction();
+
         try {
 
             $authUser = Auth::user();
@@ -334,6 +338,8 @@ class MovieController extends Controller
         if ($validator->fails()) {
             return $this->errorResponse($validator->messages(), 400);
         }
+
+        DB::beginTransaction();
 
         try {
 
